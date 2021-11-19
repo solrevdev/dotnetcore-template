@@ -17,7 +17,7 @@ namespace Core.Tests
         [Fact]
         public void Template()
         {
-            CoreClass coreClass = new CoreClass();
+            var coreClass = new CoreClass();
             var result = coreClass.Hello;
             Assert.Equal("Hello World", result);
         }
