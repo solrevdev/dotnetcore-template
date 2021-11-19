@@ -423,3 +423,6 @@ fabric.properties
 
 # macos .DS_Store file
 **/.DS_Store
+
+# ignore code coverage files
+tests/Core.Tests/lcov.info

@@ -13,7 +13,8 @@ if (![System.IO.File]::Exists($path)) {
 }
 else {
     Write-Output "[test.ps1] [$path] exists... now running dotnet test on the sln file"
-    dotnet test $path
+    dotnet test  /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info $path
+
 }
 
 

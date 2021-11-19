@@ -6,6 +6,12 @@
         "solrevdev"
     ],
     "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
         "**/bin": true,
         "**/obj": true,
         ".vscode": false,
@@ -16,6 +22,8 @@
         ".editorconfig": false,
         ".dockerignore": false,
         "omnisharp.json": false,
-        "global.json": false
-    }
+        "global.json": false,
+        "**/lcov.info": true
+    },
+    "explorerExclude.backup": null
 }
